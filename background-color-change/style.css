@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+}
+button {
+    background:rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 1rem;
+    font-size: 1.2rem;
+    box-shadow: 
+    5px 5px 6px rgba(0, 0, 0, 0.3),
+    -5px -5px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    border: none;
+    transition: transform 0.1s linear;
+    cursor: pointer;
+}
+button:focus {
+    outline: none;
+}
+button:active {
+    box-shadow: 0;
+    transform: translate(2px, 2px);
+}
